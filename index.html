@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Christine & Jon</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+		* { padding: 0; margin: 0; }
+		body { background-color: #333; }
+		h1  { color: #fff; font-size: 28px; font-family: 'Raleway', sans-serif; font-weight: 500; margin-bottom: 10px }
+		p { color: #fff; font-family: 'Raleway'; font-size: 14px; line-height: 24px; margin-bottom: 10px; -webkit-font-smoothing: antialiased; font-weight: 500;  }
+		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		a:hover { color: #FF3100; border-bottom: 1px solid rgba(255,255,255,1); }
+		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px;  }
+		#about { width: 270px; padding: 20px 0 20px 20px; margin: 500px auto 0 90px !important; background-color:rgba(255,255,255,0.20); }
+		@media (max-width: 767px) {
+			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			background-image { opacity: 0.2; }
+		}
+	</style>
+</head>	
+    
+<body>
+
+<!-- swap out for a logo -->
+<!-- <div id="monogram">
+	<img src="monogram.png" />
+</div> -->
+
+<!-- swap out for information about yourself -->
+<div id="about">
+	<h1>Christine & Jon</h1>
+	<p>Recently visited <a href="https://en.wikipedia.org/wiki/Douro_DOC">Portugal</a>, learned about the <a href="https://en.wikipedia.org/wiki/Carnation_Revolution">Carnation Revolution</a>, and ate <a href="http://pasteisdebelem.pt/en/">Pastéis de Belém</a>.</p>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+         	 $.backstretch("christineandjon_bg_1_tiny.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>	
+</html>
